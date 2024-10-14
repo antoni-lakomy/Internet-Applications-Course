@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 720px;
+  height: 96vh;
 }
 
 html {
@@ -167,7 +167,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 79vh;
 }
 
 .section__pic-container {
@@ -319,6 +319,7 @@ section {
 
 #gallery {
   margin: 0;
+  margin-bottom: 4vh;
 }
 
 .gallery-container {
@@ -327,6 +328,7 @@ section {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 
 .gallery-img {
@@ -334,7 +336,7 @@ section {
   height: 200px;
   object-fit: cover;
   object-position: center;
-  padding: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   transition: opacity 0.4s;
 }
 
@@ -347,8 +349,83 @@ section {
   display: flex;
   max-width: 1600px;
   width: 100%;
-  flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
+}
+
+.video-video {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/* CONTACT */
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.contact-h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: rgb(85, 85, 85);
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 9vh;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 4vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
