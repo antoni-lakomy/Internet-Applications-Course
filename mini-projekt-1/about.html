@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O mnie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Antoni Łakomy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">O mnie</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Antoni Łakomy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O mnie</a></li>
+          <li><a href="galeria.html" onclick="toggleMenu()">Galeria</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <p class="section__text__p1">Dowiedz się więcej</p>
+      <h1 class="title">O mnie</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/omnie-1.jpg"
+            alt="zdjęcie profilowe"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Doświadczenie</h3>
+              <p>5+ lat <br />Realizacja Oświetlenia</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Wykształcenie</h3>
+              <p>Student AGH <br />Informatyka</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+              reiciendis autem neque. Reprehenderit enim non commodi, fuga
+              voluptates voluptatem veritatis nostrum aspernatur alias assumenda
+              quisquam nobis distinctio laborum explicabo? Necessitatibus
+              recusandae tempore neque molestias ut exercitationem odit error
+              distinctio? Iure amet sed, exercitationem illum ipsa officia animi
+              a beatae maiores?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
