@@ -314,3 +314,41 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
+/* GALLERY SECTION */
+
+#gallery {
+  margin: 0;
+}
+
+.gallery-container {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+  transition: opacity 0.4s;
+}
+
+.gallery-img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.video-container {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
