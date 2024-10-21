@@ -35,6 +35,13 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+
+  .section__pic-container2 {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
   .about-containers {
     margin-top: 0;
   }
@@ -87,6 +94,12 @@
   }
 
   .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  .section__pic-container2 {
     width: auto;
     height: 46vw;
     justify-content: center;
