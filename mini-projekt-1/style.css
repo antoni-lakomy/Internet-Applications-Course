@@ -2,6 +2,40 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@keyframes transitionInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section,
+footer,
+.form-container {
+  animation: transitionInBottom 1.5s;
+}
+
+nav {
+  animation: transitionInTop 1.5s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +44,12 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 96vh;
+  /* opacity: 1;
+  transition: opacity 0.3ease-in-out;
+  -webkit-transition: opacity 0.3ease-in-out;
+  -moz-transition: opacity 0.3ease-in-out;
+  -o-transition: opacity 0.3ease-in-out;
+  -ms-transition: opacity 0.3ease-in-out; */
 }
 
 html {
