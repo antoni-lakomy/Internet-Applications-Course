@@ -5,6 +5,13 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+const cursorBorder = document.getElementById("cursor-border");
+
+document.addEventListener("mousemove", (e) => {
+  cursorBorder.style.left = `${e.pageX}px`;
+  cursorBorder.style.top = `${e.pageY}px`;
+});
+
 // var opacity = 0;
 // var intervalID = 0;
 // window.onload = fadeIn;

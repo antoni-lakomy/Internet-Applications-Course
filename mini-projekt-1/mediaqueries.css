@@ -56,6 +56,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  #cursor-border {
+    opacity: 0;
+  }
+
   footer {
     height: 10vh;
     font-size: 12px;

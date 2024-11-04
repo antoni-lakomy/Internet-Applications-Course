@@ -36,6 +36,50 @@ nav {
   animation: transitionInTop 1.5s;
 }
 
+/* #cursor-border {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(53, 53, 53);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  transform: translate(-50%, -50%);
+} */
+
+body {
+  color: black;
+  background-color: white;
+}
+
+#cursor-border {
+  width: 50px; /* Adjust the size to control effect area */
+  height: 50px;
+  border-radius: 50%; /* Circular shape */
+  position: absolute;
+  pointer-events: none; /* Prevents from blocking interactions */
+  overflow: hidden;
+  border-color: rgb(163, 163, 163);
+  border-width: 3px;
+  border-style: solid;
+  background-color: black;
+  transform: translate(-50%, -50%); /* A subtle background to show the effect */
+  mix-blend-mode: difference;
+}
+
+#cursor-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw; /* Extra large width to cover the background */
+  height: 200vh;
+  background: inherit; /* Matches body background */
+  filter: invert(1); /* Inverts colors */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +88,7 @@ nav {
 body {
   font-family: "Poppins", sans-serif;
   height: 96vh;
+  /* position: relative; */
   /* opacity: 1;
   transition: opacity 0.3ease-in-out;
   -webkit-transition: opacity 0.3ease-in-out;
