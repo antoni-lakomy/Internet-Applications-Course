@@ -53,14 +53,14 @@ body {
 }
 
 #cursor-border {
-  width: 50px; /* Adjust the size to control effect area */
-  height: 50px;
+  width: 15px; /* Adjust the size to control effect area */
+  height: 15px;
   border-radius: 50%; /* Circular shape */
   position: absolute;
   pointer-events: none; /* Prevents from blocking interactions */
   overflow: hidden;
   border-color: rgb(163, 163, 163);
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   background-color: black;
   transform: translate(-50%, -50%); /* A subtle background to show the effect */
