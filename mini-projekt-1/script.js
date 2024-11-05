@@ -8,8 +8,17 @@ function toggleMenu() {
 const cursorBorder = document.getElementById("cursor-border");
 
 document.addEventListener("mousemove", (e) => {
-  cursorBorder.style.left = `${e.pageX}px`;
-  cursorBorder.style.top = `${e.pageY}px`;
+  const cursorSize = 10;
+
+  // Calculate constrained positions to avoid overflow
+  const x = Math.min(window.innerWidth - 26, Math.max(cursorSize, e.pageX));
+  const y = Math.min(
+    window.innerHeight - cursorSize,
+    Math.max(cursorSize, e.pageY)
+  );
+
+  cursorBorder.style.left = `${x}px`;
+  cursorBorder.style.top = `${y}px`;
 });
 
 // var opacity = 0;
