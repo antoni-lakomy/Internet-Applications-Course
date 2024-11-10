@@ -8,34 +8,14 @@ function toggleMenu() {
 const cursorBorder = document.getElementById("cursor-border");
 
 document.addEventListener("mousemove", (e) => {
-  const cursorSize = 10;
+  const cursorSize = 10; 
+  
+  const maxWidth = document.documentElement.scrollWidth - cursorSize;
+  const maxHeight = document.documentElement.scrollHeight - cursorSize;
 
-  // Calculate constrained positions to avoid overflow
-  const x = Math.min(window.innerWidth - 26, Math.max(cursorSize, e.pageX));
-  const y = Math.min(
-    window.innerHeight - cursorSize,
-    Math.max(cursorSize, e.pageY)
-  );
+  const x = Math.min(maxWidth, Math.max(cursorSize, e.pageX));
+  const y = Math.min(maxHeight, Math.max(cursorSize, e.pageY));
 
   cursorBorder.style.left = `${x}px`;
   cursorBorder.style.top = `${y}px`;
 });
-
-// var opacity = 0;
-// var intervalID = 0;
-// window.onload = fadeIn;
-
-// function fadeIn() {
-//   setInterval(show, 200);
-// }
-
-// function show() {
-//   var body = document.getElementById("body");
-//   opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity"));
-//   if (opacity < 1) {
-//     opacity = opacity + 0.1;
-//     body.style.opacity = opacity;
-//   } else {
-//     clearInterval(intervalID);
-//   }
-// }
