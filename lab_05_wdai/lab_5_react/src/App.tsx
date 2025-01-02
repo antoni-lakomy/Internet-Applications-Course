@@ -2,35 +2,42 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Produkt from './components/koszyk/zad_1_1';
+// import Produkt from './components/koszyk/zad_1_1';
+import Licznik from './components/liczniki/zad_2_1';
+import NowyLicznik from './components/liczniki/zad_2_2';
 
-function Koszyk() {
-  return (
-    <div>
-      <Produkt nazwa='jabłko'/>
-      <Produkt nazwa='gruszka'/>
-      <Produkt nazwa='pomarańcza'/>
-      <Produkt nazwa='bakłażan'/>
-      <Produkt nazwa='kremówka'/>
-    </div>  
-  )
-}
+// function Koszyk() {
+//   return (
+//     <div>
+//       <Produkt nazwa='jabłko'/>
+//       <Produkt nazwa='gruszka'/>
+//       <Produkt nazwa='pomarańcza'/>
+//       <Produkt nazwa='bakłażan'/>
+//       <Produkt nazwa='kremówka'/>
+//     </div>  
+//   )
+// }
 
-function NowyKoszyk() {
-  const produkty = ['śliwka', 'banan', 'awokado', 'gruszka', 'jabłko']
-  return (
-    produkty.map((produkt) => <Produkt nazwa={produkt}/> )
-  );
-}
+// function NowyKoszyk() {
+//   const produkty = ['śliwka', 'banan', 'awokado', 'gruszka', 'jabłko']
+//   return (
+//     produkty.map((produkt) => <Produkt nazwa={produkt}/> )
+//   );
+// }
 
 
 export default function App() {
+  // return (
+  //   <div>
+  //     <NowyKoszyk/>
+  //     <Koszyk/>
+  //   </div>  
+  // );
+
   return (
-    <div>
-      <NowyKoszyk/>
-      <Koszyk/>
-    </div>  
-  );
+      // <Licznik/>
+      <NowyLicznik/>
+    );
   // const [count, setCount] = useState(0)
 
   // return (
