@@ -14,7 +14,7 @@ let gameRunning;
 
 function createZombie() {
   let speed = getRandomInt(15, 61);
-  let bottom = getRandomInt(3, 31);
+  let bottom = getRandomInt(3, 60);
   let size = getRandomInt(1, 3);
 
   spawnZombie(speed, bottom, size);
