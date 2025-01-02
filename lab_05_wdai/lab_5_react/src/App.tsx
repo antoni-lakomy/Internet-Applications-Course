@@ -17,21 +17,19 @@ function Koszyk() {
 }
 
 function NowyKoszyk() {
+  const produkty = ['śliwka', 'banan', 'awokado', 'gruszka', 'jabłko']
   return (
-    <div>
-      <Produkt nazwa='jabłko'/>
-      <Produkt nazwa='gruszka'/>
-      <Produkt nazwa='pomarańcza'/>
-      <Produkt nazwa='bakłażan'/>
-      <Produkt nazwa='kremówka'/>
-    </div>  
-  )
+    produkty.map((produkt) => <Produkt nazwa={produkt}/> )
+  );
 }
 
 
 export default function App() {
   return (
-    <Koszyk/>
+    <div>
+      <NowyKoszyk/>
+      <Koszyk/>
+    </div>  
   );
   // const [count, setCount] = useState(0)
 
