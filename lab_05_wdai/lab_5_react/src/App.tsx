@@ -2,9 +2,12 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+// import Haslo from './components/formularze/zad_3_2';
+import Logowanie from './components/formularze/zad_3_3';
+// import Formularz from './components/formularze/zad_3_1'
 // import Produkt from './components/koszyk/zad_1_1';
-import Licznik from './components/liczniki/zad_2_1';
-import NowyLicznik from './components/liczniki/zad_2_2';
+// import Licznik from './components/liczniki/zad_2_1';
+// import NowyLicznik from './components/liczniki/zad_2_2';
 
 // function Koszyk() {
 //   return (
@@ -34,10 +37,17 @@ export default function App() {
   //   </div>  
   // );
 
-  return (
+  // return (
       // <Licznik/>
-      <NowyLicznik/>
-    );
+      // <NowyLicznik/>
+  //   );
+
+  return (
+    // <Formularz/>
+    // <Haslo/>
+     <Logowanie/>
+
+  );
   // const [count, setCount] = useState(0)
 
   // return (
