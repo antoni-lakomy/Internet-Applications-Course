@@ -2,12 +2,15 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+// import LicznikTwo from './components/efekty/zad_6_1';
+// import Tytul from './components/efekty/zad_6_2';
+import Odliczanie from './components/efekty/zad_6_3';
 // import Haslo from './components/formularze/zad_3_2';
 // import Logowanie from './components/formularze/zad_3_3';
 // import Ternary from './components/inne/zad_4_1';
 // import Aktualizacja from './components/inne/zad_4_2';
 // import Studenci from './components/studenci/zad_5_1';
-import StudentManager from './components/studenci/zad_5_2';
+// import StudentManager from './components/studenci/zad_5_2';
 // import Formularz from './components/formularze/zad_3_1'
 // import Produkt from './components/koszyk/zad_1_1';
 // import Licznik from './components/liczniki/zad_2_1';
@@ -55,9 +58,14 @@ export default function App() {
     // <Ternary/>
     // <Aktualizacja/>
   // )
-  return (
+  // return (
     // <Studenci/>
-    <StudentManager/>
+  //   <StudentManager/>
+  // )
+  return (
+    // <LicznikTwo/>
+    // <Tytul/>
+    <Odliczanie/>
   )
 
   // const [count, setCount] = useState(0)
