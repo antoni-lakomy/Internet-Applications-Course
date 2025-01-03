@@ -1,0 +1,194 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/* Ogólny styl strony */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Ogólny styl strony */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  color: #cce7ff; /* Jasny niebieski tekst */
+}
+
+/* Nawigacja */
+nav {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #00c8ff; /* Niebieski */
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #80e4ff; /* Jaśniejszy niebieski */
+}
+
+/* Kontener dla stron */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Nagłówki */
+h1 {
+  color: #00c8ff; /* Niebieski */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: #00c8ff; /* Jaśniejszy niebieski */
+  text-align: center;
+}
+
+/* Lista artykułów */
+.blog-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-list li {
+  margin: 0.5rem 0;
+  background-color: #2e2e2e;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.blog-list li a {
+  color: #61dafb; /* Niebieski */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-list li a:hover {
+  text-decoration: underline;
+  color: #80e4ff; /* Jaśniejszy niebieski */
+}
+
+/* Formularz dodawania */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wycentrowanie pól */
+  gap: 1rem;
+}
+
+.form label {
+  font-weight: bold;
+  color: #cce7ff; /* Jasny niebieski */
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  max-width: 600px; /* Ograniczenie szerokości */
+  padding: 0.5rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  color: #cce7ff; /* Jasny niebieski */
+}
+
+.form textarea {
+  height: 150px; /* Powiększenie pola "treść" */
+  resize: none; /* Zablokowanie zmiany rozmiaru */
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #666; /* Przytłumiony szary */
+}
+
+.form button {
+  padding: 0.5rem 1rem;
+  background-color: #61dafb; /* Niebieski */
+  color: #1a1a1a; /* Ciemne tło */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #80e4ff; /* Jaśniejszy niebieski */
+}
+
+/* Szczegóły artykułu */
+.article {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2e2e2e;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  color: #cce7ff; /* Jasny niebieski */
+}
+
+/* Stopka */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666; /* Przytłumiony szary */
+}
