@@ -54,6 +54,28 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+table,
+tr,
+td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+.dodawanie {
+  margin: 5px;
+}
+
+.student-table {
+  margin: auto;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

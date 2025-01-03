@@ -4,8 +4,10 @@
 import './App.css'
 // import Haslo from './components/formularze/zad_3_2';
 // import Logowanie from './components/formularze/zad_3_3';
-import Ternary from './components/inne/zad_4_1';
-import Aktualizacja from './components/inne/zad_4_2';
+// import Ternary from './components/inne/zad_4_1';
+// import Aktualizacja from './components/inne/zad_4_2';
+// import Studenci from './components/studenci/zad_5_1';
+import StudentManager from './components/studenci/zad_5_2';
 // import Formularz from './components/formularze/zad_3_1'
 // import Produkt from './components/koszyk/zad_1_1';
 // import Licznik from './components/liczniki/zad_2_1';
@@ -49,9 +51,13 @@ export default function App() {
   //   // <Haslo/>
   //    <Logowanie/>
   // );
-  return (
+  // return (
     // <Ternary/>
-    <Aktualizacja/>
+    // <Aktualizacja/>
+  // )
+  return (
+    // <Studenci/>
+    <StudentManager/>
   )
 
   // const [count, setCount] = useState(0)
