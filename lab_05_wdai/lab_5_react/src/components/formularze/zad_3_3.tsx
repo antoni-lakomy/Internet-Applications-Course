@@ -40,7 +40,9 @@ export default function Logowanie() {
       />
       <br />
       <br />
-      <button onClick={validateLogin} disabled={!isFilled()}>Zaloguj się</button>
+      <button onClick={validateLogin} disabled={!isFilled()}>
+        Zaloguj się
+      </button>
     </div>
   );
 }

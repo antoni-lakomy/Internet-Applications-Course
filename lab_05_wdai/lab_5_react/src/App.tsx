@@ -3,7 +3,9 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 // import Haslo from './components/formularze/zad_3_2';
-import Logowanie from './components/formularze/zad_3_3';
+// import Logowanie from './components/formularze/zad_3_3';
+import Ternary from './components/inne/zad_4_1';
+import Aktualizacja from './components/inne/zad_4_2';
 // import Formularz from './components/formularze/zad_3_1'
 // import Produkt from './components/koszyk/zad_1_1';
 // import Licznik from './components/liczniki/zad_2_1';
@@ -42,12 +44,16 @@ export default function App() {
       // <NowyLicznik/>
   //   );
 
+  // return (
+  //   // <Formularz/>
+  //   // <Haslo/>
+  //    <Logowanie/>
+  // );
   return (
-    // <Formularz/>
-    // <Haslo/>
-     <Logowanie/>
+    // <Ternary/>
+    <Aktualizacja/>
+  )
 
-  );
   // const [count, setCount] = useState(0)
 
   // return (
