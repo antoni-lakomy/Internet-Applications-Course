@@ -1,10 +1,12 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 // import LicznikTwo from './components/efekty/zad_6_1';
 // import Tytul from './components/efekty/zad_6_2';
-import Odliczanie from './components/efekty/zad_6_3';
+// import Odliczanie from "./components/efekty/zad_6_3";
+// import Komentarz from "./components/produkty/zad_7_1";
+import Komentarze from "./components/produkty/zad_7_2";
 // import Haslo from './components/formularze/zad_3_2';
 // import Logowanie from './components/formularze/zad_3_3';
 // import Ternary from './components/inne/zad_4_1';
@@ -24,7 +26,7 @@ import Odliczanie from './components/efekty/zad_6_3';
 //       <Produkt nazwa='pomarańcza'/>
 //       <Produkt nazwa='bakłażan'/>
 //       <Produkt nazwa='kremówka'/>
-//     </div>  
+//     </div>
 //   )
 // }
 
@@ -35,18 +37,17 @@ import Odliczanie from './components/efekty/zad_6_3';
 //   );
 // }
 
-
 export default function App() {
   // return (
   //   <div>
   //     <NowyKoszyk/>
   //     <Koszyk/>
-  //   </div>  
+  //   </div>
   // );
 
   // return (
-      // <Licznik/>
-      // <NowyLicznik/>
+  // <Licznik/>
+  // <NowyLicznik/>
   //   );
 
   // return (
@@ -55,19 +56,28 @@ export default function App() {
   //    <Logowanie/>
   // );
   // return (
-    // <Ternary/>
-    // <Aktualizacja/>
+  // <Ternary/>
+  // <Aktualizacja/>
   // )
   // return (
-    // <Studenci/>
+  // <Studenci/>
   //   <StudentManager/>
   // )
+  // return (
+  // <LicznikTwo/>
+  // <Tytul/>
+  // <Odliczanie />
+  // );
   return (
-    // <LicznikTwo/>
-    // <Tytul/>
-    <Odliczanie/>
-  )
-
+    // <Komentarz
+    //   id={1}
+    //   body="To jest przykład komentarza."
+    //   postId={123}
+    //   likes={10}
+    //   user={{ id: 1, username: "jan_kowalski", fullName: "Jan Kowalski" }}
+    // />
+    <Komentarze/>
+  );
   // const [count, setCount] = useState(0)
 
   // return (
@@ -95,4 +105,3 @@ export default function App() {
   //   </>
   // )
 }
-
