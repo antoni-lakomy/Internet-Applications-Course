@@ -3,10 +3,10 @@
 // import viteLogo from '/vite.svg'
 import "./App.css";
 // import LicznikTwo from './components/efekty/zad_6_1';
-// import Tytul from './components/efekty/zad_6_2';
+import Tytul from './components/efekty/zad_6_2';
 // import Odliczanie from "./components/efekty/zad_6_3";
 // import Komentarz from "./components/produkty/zad_7_1";
-import Komentarze from "./components/produkty/zad_7_2";
+// import Komentarze from "./components/produkty/zad_7_2";
 // import Haslo from './components/formularze/zad_3_2';
 // import Logowanie from './components/formularze/zad_3_3';
 // import Ternary from './components/inne/zad_4_1';
@@ -63,12 +63,12 @@ export default function App() {
   // <Studenci/>
   //   <StudentManager/>
   // )
-  // return (
-  // <LicznikTwo/>
-  // <Tytul/>
-  // <Odliczanie />
-  // );
   return (
+  // <LicznikTwo/>
+  <Tytul/>
+  // <Odliczanie />
+  );
+  // return (
     // <Komentarz
     //   id={1}
     //   body="To jest przykład komentarza."
@@ -76,8 +76,8 @@ export default function App() {
     //   likes={10}
     //   user={{ id: 1, username: "jan_kowalski", fullName: "Jan Kowalski" }}
     // />
-    <Komentarze/>
-  );
+    // <Komentarze/>
+  // );
   // const [count, setCount] = useState(0)
 
   // return (
